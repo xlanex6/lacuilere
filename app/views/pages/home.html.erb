@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 text-center ">
+      <h1>Nous sommes le <%= @last_year %></h1>
+
+    <% arr = %w(Alex Sam José Michel Baptiste) %>
+    <ul class='list-inline'>
+    <% arr.each do |person| %>
+      <li><%= person %></li><br>
+      <li><%= link_to "contact", connection_path %></li><br>
+      <% end %>
+    </ul>
+    </div>
+    <div>
+
+    </div>
+  </div>
+</div>
